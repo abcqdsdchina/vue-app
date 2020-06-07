@@ -13,5 +13,15 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script>
+      (function() {
+        function autoRootFontSize() {
+            document.documentElement.style.fontSize =   
+          Math.min(screen.width,document.documentElement.getBoundingClientRect().width)  /  750 * 32 + 'px';
+        }
+        window.addEventListener('resize', autoRootFontSize);
+        autoRootFontSize();
+      })();
+    </script>
   </body>
 </html>
