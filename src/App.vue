@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import 'vantx/lib/index.css'
+import 'vant/lib/index.css'
 
 export default {
   name: 'app'
