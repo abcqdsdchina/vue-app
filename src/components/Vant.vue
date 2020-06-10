@@ -1,11 +1,20 @@
 <template>
-  <div>
-    <van-sidebar v-model="activeKey" style="position: relative">
+  <div style="position: relative; overflow: hidden; display: flex">
+    <van-sidebar v-model="activeKey">
+      <van-sidebar-item title="标签名称" />
+      <van-sidebar-item title="标签名称" />
+      <van-sidebar-item title="标签名称" />
+      <van-sidebar-item title="标签名称" />
+      <van-sidebar-item title="标签名称" />
+      <van-sidebar-item title="标签名称" />
+      <van-sidebar-item title="标签名称" />
+      <van-sidebar-item title="标签名称" />
+      <van-sidebar-item title="标签名称" />
       <van-sidebar-item title="标签名称" />
       <van-sidebar-item title="标签名称" />
       <van-sidebar-item title="标签名称" />
     </van-sidebar>
-    <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="onLoad">
+    <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="onLoad" style="width: 100%">
       <van-cell v-for="item in list" :key="item">
         <van-card num="2" price="2.00" desc="描述信息" title="商品标题" thumb="https://img.yzcdn.cn/vant/ipad.jpeg"/>
       </van-cell>

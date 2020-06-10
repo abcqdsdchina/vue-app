@@ -1,32 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import { Button } from 'vant'
-import { Card } from 'vant'
-import { Cell } from 'vant'
-import { Col, Row } from 'vant'
-import { List } from 'vant'
-import { Sidebar, SidebarItem } from 'vant'
+import Vant from 'vant'
 import App from './App.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import Login from './components/Login.vue'
-import Vant from './components/Vant.vue'
+import Component from './components/Vant.vue'
+import 'vant/lib/index.less'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
-Vue.use(Button)
-Vue.use(Card)
-Vue.use(Cell)
-Vue.use(Col)
-Vue.use(Row)
-Vue.use(List)
-Vue.use(Sidebar)
-Vue.use(SidebarItem)
+Vue.use(Vant)
 
 const routes = [
   { path: '/', component: Login },
   { path: '/hello-world', component: HelloWorld },
   { path: '/login', component: Login },
-  { path: '/vant', component: Vant }
+  { path: '/vant', component: Component }
 ]
 
 const router = new VueRouter({
